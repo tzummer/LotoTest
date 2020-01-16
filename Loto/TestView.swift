@@ -8,6 +8,7 @@
 
 
 import SwiftUI
+import Alamofire
 
 var bbnum = ["11 ","3 ","6","7","5 "]
 var iinum = ["25","30","21","23","18"]
