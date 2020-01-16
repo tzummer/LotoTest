@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<!-- saved from url=(0192)https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&pageNumber=1&gameSortType=0&sortProperty=DATETIME&ticketID=1321608180068&org.apache.struts.action.TOKEN=01763EA276335E035773E682F9C3B2D2 -->
+<html class="modal_open"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+            
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./tänaneeeepileet_files/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./tänaneeeepileet_files/styles.css">
+            
+
+
+        <script type="text/javascript" async="" src="./tänaneeeepileet_files/ecommerce.js.download"></script><script async="" src="./tänaneeeepileet_files/analytics.js.download"></script><script async="" src="./tänaneeeepileet_files/analytics.js.download"></script><script type="text/javascript">
+            var contextPath = "";
+        </script>
+
+
+        <link rel="stylesheet" type="text/css" href="./tänaneeeepileet_files/jquery-ui.min.css">
+        <script src="./tänaneeeepileet_files/jquery.min.js.download"></script>
+        <script type="text/javascript" src="./tänaneeeepileet_files/jquery-ui.min.js.download"></script>
+        <script type="text/javascript" src="./tänaneeeepileet_files/sessvars.js.download"></script>
+        <script type="text/javascript" src="./tänaneeeepileet_files/script.js.download"></script>
+
+
+        <title>
+            Eesti Loto
+            
+                - Piletid
+            
+        </title>
+    <script type="text/javascript">// Promises 
+var _eid_promises = {}; 
+// Turn the incoming message from extension 
+// into pending Promise resolving 
+window.addEventListener("message", function(event) { 
+    if(event.source !== window) return; 
+    if(event.data.src && (event.data.src === "background.js")) { 
+        console.log("Page received: "); 
+        console.log(event.data); 
+        // Get the promise 
+        if(event.data.nonce) { 
+            var p = _eid_promises[event.data.nonce]; 
+            // resolve 
+            if(event.data.result === "ok") { 
+                if(event.data.signature !== undefined) { 
+                    p.resolve({hex: event.data.signature}); 
+                } else if(event.data.version !== undefined) { 
+                    p.resolve(event.data.extension + "/" + event.data.version); 
+                } else if(event.data.cert !== undefined) { 
+                    p.resolve({hex: event.data.cert}); 
+                } else { 
+                    console.log("No idea how to handle message"); 
+                    console.log(event.data); 
+                } 
+            } else { 
+                // reject 
+                p.reject(new Error(event.data.result)); 
+            } 
+            delete _eid_promises[event.data.nonce]; 
+        } else { 
+            console.log("No nonce in event msg"); 
+        } 
+    } 
+}, false); 
+ 
+ 
+function TokenSigning() { 
+    function nonce() { 
+        var val = ""; 
+        var hex = "abcdefghijklmnopqrstuvwxyz0123456789"; 
+        for(var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length)); 
+        return val; 
+    } 
+ 
+    function messagePromise(msg) { 
+        return new Promise(function(resolve, reject) { 
+            // amend with necessary metadata 
+            msg["nonce"] = nonce(); 
+            msg["src"] = "page.js"; 
+            // send message 
+            window.postMessage(msg, "*"); 
+            // and store promise callbacks 
+            _eid_promises[msg.nonce] = { 
+                resolve: resolve, 
+                reject: reject 
+            }; 
+        }); 
+    } 
+    this.getCertificate = function(options) { 
+        var msg = {type: "CERT", lang: options.lang, filter: options.filter}; 
+        console.log("getCertificate()"); 
+        return messagePromise(msg); 
+    }; 
+    this.sign = function(cert, hash, options) { 
+        var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info}; 
+        console.log("sign()"); 
+        return messagePromise(msg); 
+    }; 
+    this.getVersion = function() { 
+        console.log("getVersion()"); 
+        return messagePromise({ 
+            type: "VERSION" 
+        }); 
+    }; 
+}</script></head>
+
+    <body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- $Id: ga.jsp $ -->
+
+
+
+
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-5061824-1', 'auto');
+    ga('send', 'pageview');
+    ga('require', 'ecommerce');
+</script>
+
+<script type="text/javascript" src="./tänaneeeepileet_files/ga-track-registration.js.download"></script>
+<script type="text/javascript" src="./tänaneeeepileet_files/main.js.download"></script>
+<script>
+    $(document).ready(function () {
+        $('form').attr('autocomplete', 'off');
+    });
+    setGaTrackRegistrationEnabled(true);
+</script>
+
+
+
+
+
+
+
+
+
+
+<input id="keepLoginOpen" hidden="" value="">
+
+<!-- LOGIn -->
+
+
+<!-- HEADER -->
+
+
+<div id="header">
+
+    <div class="header_row first_row">
+
+        <a href="https://www.eestiloto.ee/osi?org.apache.struts.taglib.html.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1"><img class="main_logo" src="./tänaneeeepileet_files/eestiloto_w.svg" height="40" width="160" alt="Eesti Loto"></a>
+        <div class="profile_area">
+
+            <div class="text">
+                <div class="langnaviact">
+                    <a href="https://www.eestiloto.ee/osi/tickets.do?language=et&amp;gameSortType=0&amp;onlyActive=true&amp;sortProperty=DATETIME&amp;ticketID=1321608180068&amp;pageNumber=1&amp;org.apache.struts.taglib.html.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1&amp;org.apache.struts.action.TOKEN=01763EA276335E035773E682F9C3B2D2" class="profile_item">EST</a>
+                </div>
+                <div class="langnavipas">
+                    <a href="https://www.eestiloto.ee/osi/tickets.do?language=ru&amp;gameSortType=0&amp;onlyActive=true&amp;sortProperty=DATETIME&amp;ticketID=1321608180068&amp;pageNumber=1&amp;org.apache.struts.taglib.html.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1&amp;org.apache.struts.action.TOKEN=01763EA276335E035773E682F9C3B2D2" class="profile_item">RUS</a>
+                </div>
+            </div>
+
+            
+            <a href="https://www.eestiloto.ee/osi/customer.do?org.apache.struts.taglib.html.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="profile_item flex"><svg class="user_icon" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23">
+                    <path fill="#FFF" fill-rule="nonzero" d="M11 13.125a6.19 6.19 0 0 1-6.188-6.187A6.19 6.19 0 0 1 11 .75a6.19 6.19 0 0 1 6.187 6.188A6.19 6.19 0 0 1 11 13.125zm5.5 1.375A5.5 5.5 0 0 1 22 20v.687a2.063 2.063 0 0 1-2.063 2.063H2.062A2.063 2.063 0 0 1 0 20.687V20a5.5 5.5 0 0 1 5.5-5.5h2.368a7.488 7.488 0 0 0 6.265 0H16.5z"></path>
+                </svg>
+                <span class="first_name hide_phone">Andrus</span>
+                <span class="last_name hide_phone">Rikk</span></a>
+
+            <a href="https://www.eestiloto.ee/osi.do?action=logout&amp;org.apache.struts.taglib.html.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="profile_item border_left hide_phone">Logi välja</a>
+            
+
+
+            <div class="profile_item button gray4 priority1 hamburger">
+                <div class="hamburger_container">
+                    <svg class="burger_open" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6H19V8H5V6ZM5 11H19V13H5V11ZM19 16H5V18H19V16Z" fill="white"></path>
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="6" width="14" height="12">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6H19V8H5V6ZM5 11H19V13H5V11ZM19 16H5V18H19V16Z" fill="white"></path>
+                        </mask>
+                    </svg>
+
+                    <svg class="burger_close" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.8796 12L19.372 16.4933C20.1925 17.3122 20.211 18.6202 19.416 19.4156C18.621 20.2111 17.313 20.1921 16.4926 19.3731L12.0002 14.8799L7.50781 19.3731C6.68733 20.1921 5.37937 20.2111 4.58439 19.4156C3.78941 18.6202 3.80791 17.3127 4.62689 16.4933L9.12026 12L4.62689 7.50673C3.80791 6.68777 3.78891 5.37984 4.58439 4.58438C5.37987 3.78892 6.68733 3.80792 7.50781 4.62688L12.0002 9.12015L16.4926 4.62688C17.313 3.80792 18.621 3.78892 19.416 4.58438C20.211 5.37984 20.1925 6.68727 19.372 7.50673L14.8796 12Z" fill="white"></path>
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16" height="16">
+                            <path d="M14.8796 12L19.372 16.4933C20.1925 17.3122 20.211 18.6202 19.416 19.4156C18.621 20.2111 17.313 20.1921 16.4926 19.3731L12.0002 14.8799L7.50781 19.3731C6.68733 20.1921 5.37937 20.2111 4.58439 19.4156C3.78941 18.6202 3.80791 17.3127 4.62689 16.4933L9.12026 12L4.62689 7.50673C3.80791 6.68777 3.78891 5.37984 4.58439 4.58438C5.37987 3.78892 6.68733 3.80792 7.50781 4.62688L12.0002 9.12015L16.4926 4.62688C17.313 3.80792 18.621 3.78892 19.416 4.58438C20.211 5.37984 20.1925 6.68727 19.372 7.50673L14.8796 12Z" fill="white"></path>
+                        </mask>
+                    </svg>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="headermenu" class="header_row buttons">
+        <div style="position:relative;z-index:30;">
+            <div class="main_menu"><div class="mainmenupas"><a href="https://www.eestiloto.ee/osi/game?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Mängima</a></div><div class="mainmenupas"><a href="https://www.eestiloto.ee/osi/stats.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Statistika</a></div><div class="mainmenupas"><a href="https://www.eestiloto.ee/osi/draws.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Tulemused</a></div><div class="mainmenupas"><a href="https://www.eestiloto.ee/osi/info?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Info</a></div><div class="mainmenupas"><a href="https://www.eestiloto.ee/osi/loto?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Eesti Loto</a></div><div class="mainmenupas"><a href="https://www.eestiloto.ee/osi/customer.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Konto</a></div><div class="mainmenuact"><a href="https://www.eestiloto.ee/osi/tickets.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Piletid</a></div><div class="mainmenupas"><a href="https://www.eestiloto.ee/osi/wins.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Võidud</a></div><div class="mainmenupas"><a href="https://www.eestiloto.ee/osi/shopping.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Ostukorv</a></div></div>
+        </div>
+    </div>
+</div>
+
+<!-- MOBILE NAV -->
+<div class="mobile_nav">
+    <div class="mobile_nav_container">
+        <div class="mobile_nav_columns">
+
+
+            <div class="column">
+
+                
+                <div class="row">
+                    <div class="nav_button">
+                        <div class="navbar_name">
+                            <span class="first_name bold">Andrus</span>
+                            <span class="last_name bold">Rikk</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                
+
+                
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/customer.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Konto
+                        </a>
+                        <span class="navbar_caret">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="black"></path>
+                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="7" width="19" height="11">
+                                        <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="white"></path>
+                                    </mask>
+                                </svg>
+                            </span>
+                    </div>
+                    <div class="nav_button nav_dropdown">
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/customer/precept?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Üldtingimused
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/customer/privacy?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Isikuandmete kaitse
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/customer/rules?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Üldreeglid
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/wins.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Võidud
+                        </a>
+                        <span class="navbar_caret">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="black"></path>
+                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="7" width="19" height="11">
+                                        <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="white"></path>
+                                    </mask>
+                                </svg>
+                            </span>
+                    </div>
+                    <div class="nav_button nav_dropdown">
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/wins.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1&amp;subTab=terminal">
+                            Terminali võidud
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=false&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Piletid
+                        </a>
+                        <span class="navbar_caret">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="black"></path>
+                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="7" width="19" height="11">
+                                        <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="white"></path>
+                                    </mask>
+                                </svg>
+                            </span>
+                    </div>
+
+                    <div class="nav_button nav_dropdown">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Aktiivsed piletid
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/shopping.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            <svg class="nav_cart" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19">
+                                <path fill="#263037" fill-rule="nonzero" d="M19.406 2.5c.538 0 .939.497.824 1.023l-1.59 7.312a.844.844 0 0 1-.824.665H6.833l.33 1.688h9.92c.538 0 .939.497.824 1.023l-.036.167A2.25 2.25 0 1 1 14.063 16v-.002c0-.333.135-.836.301-1.123H9.261c.166.287.301.79.301 1.123V16a2.25 2.25 0 1 1-3.873-1.557L3.243 1.938H.422A.422.422 0 0 1 0 1.516V.672C0 .439.189.25.422.25h3.515c.404 0 .751.286.829.682L5.072 2.5h14.334zM7.312 16.844a.845.845 0 0 0 0-1.688.845.845 0 0 0 0 1.688zm9 0a.845.845 0 0 0 0-1.688.845.845 0 0 0 0 1.688zm.824-7.031l1.223-5.625H5.402l1.101 5.625h10.633z"></path>
+                            </svg>
+                            Ostukorv
+                        </a>
+                    </div>
+                </div>
+                
+
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/game?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Mängima
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/draws.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Tulemused
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/stats.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Statistika
+                        </a>
+                        <span class="navbar_caret">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="black"></path>
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="7" width="19" height="11">
+                                    <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="white"></path>
+                                </mask>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="nav_button nav_dropdown">
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/stats.do?action=numbers&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Sagedus
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/stats.do?action=draws&amp;gameCode=15&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Loosimised
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/info/news?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Info
+                        </a>
+                        <span class="navbar_caret">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="black"></path>
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="7" width="19" height="11">
+                                    <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="white"></path>
+                                </mask>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="nav_button nav_dropdown">
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/info/wins?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Võidud
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/info/faq?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            KKK
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/loto/pos?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Müügipunktid
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/info/m-loto?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            M-Loto
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/info/instant?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Kiirloto
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="nav_button">
+                        <a class="button big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/loto/main?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Eesti Loto
+                        </a>
+                        <span class="navbar_caret">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="black"></path>
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="7" width="19" height="11">
+                                    <path d="M3.61581 10.5205L10.5155 16.7147C10.9078 17.0665 11.4286 17.2814 12.0002 17.2814C12.5717 17.2814 13.0925 17.0665 13.4867 16.7129L13.4844 16.7147L20.386 10.5205C20.7636 10.1837 21.0002 9.6955 21.0002 9.15212C21.0002 8.60875 20.7636 8.12087 20.3879 7.78525L20.386 7.78375C19.9934 7.43312 19.4725 7.219 18.9013 7.219C18.3302 7.219 17.8097 7.43312 17.4148 7.78562L17.4171 7.78375L12.0002 12.6497L6.58322 7.78375C6.19096 7.43312 5.67046 7.21862 5.0997 7.21862C4.52895 7.21862 4.00844 7.43312 3.61394 7.78562L3.61619 7.78375C2.79493 8.539 2.79493 9.763 3.61619 10.5201L3.61581 10.5205Z" fill="white"></path>
+                                </mask>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="nav_button nav_dropdown">
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/loto/administration?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Juhatus
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/loto/rg?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Vastutustundlik mängimine
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/loto/winners?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Suurvõidud
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/loto/pos?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Müügipunktid
+                        </a>
+                        <a class="subbutton big_text white_text bold_active_line_left" transaction="true" href="https://www.eestiloto.ee/osi/loto/history?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                            Ajalugu
+                        </a>
+                    </div>
+                </div>
+
+
+                
+
+                <div class="row row_highlighted">
+                    <div class="nav_button">
+
+                        <a href="https://www.eestiloto.ee/osi.do?action=logout&amp;org.apache.struts.taglib.html.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="profile_item">Logi välja</a>
+
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- $Id: ga.jsp $ -->
+
+
+
+
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-5061824-1', 'auto');
+    ga('send', 'pageview');
+    ga('require', 'ecommerce');
+</script>
+
+<div id="root_div" class="content-wrapper">
+    <div id="contentbox">
+        <div class="content_container">
+
+            <!-- CONTENT HEADER -->
+            <div class="content_header">
+
+                <div class="content_header_top">
+
+                    <div class="column title_column">
+                        
+                            Piletid
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ACTUAL CONTENT -->
+            <div class="content">
+
+                <div class="column left_menu"><div class="button_wrapper"></div></div>
+                
+
+
+
+
+
+
+
+
+
+<div class="column left_menu">
+    <div class="button_wrapper">
+
+        
+        
+
+
+        <div class="button gray1_square bold ">
+            <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=false&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                Kõik piletid
+            </a>
+        </div>
+        
+        
+
+
+        <div class="button gray1_square bold submenuact">
+            <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">
+                Aktiivsed piletid
+            </a>
+        </div>
+        
+
+    </div>
+</div>
+
+                <div class="column main_content">
+
+
+                    <div class="magnolia_tab col-reverse">
+                        
+                            
+                            
+                        
+                    </div>
+
+
+                    <div class="magnolia_tab col-reverse">
+                        
+                    </div>
+
+
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="navigation_bar">
+
+    <div class="navigation_tabs">
+        <form name="reportForm" method="get" action="https://www.eestiloto.ee/osi/tickets.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" autocomplete="off"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="F2475C38FB1FAB4CEDC6E29404AEBCD1"></div>
+
+
+            <div class="column content_tabs hide_phone">
+                
+                <label>
+                    <input hidden="" type="checkbox" onchange="this.form.submit();" value="0" name="gameSortType">
+                    <div class="button content_button active">
+                        
+                        Kõik piletid
+                        
+                    </div>
+                </label>
+                
+                <label>
+                    <input hidden="" type="checkbox" onchange="this.form.submit();" value="1" name="gameSortType">
+                    <div class="button content_button ">
+                        
+                        Bingo loto
+                        
+                    </div>
+                </label>
+                
+                <label>
+                    <input hidden="" type="checkbox" onchange="this.form.submit();" value="2" name="gameSortType">
+                    <div class="button content_button ">
+                        
+                        Eurojackpot
+                        
+                    </div>
+                </label>
+                
+                <label>
+                    <input hidden="" type="checkbox" onchange="this.form.submit();" value="3" name="gameSortType">
+                    <div class="button content_button ">
+                        
+                        Vikinglotto
+                        
+                    </div>
+                </label>
+                
+                <label>
+                    <input hidden="" type="checkbox" onchange="this.form.submit();" value="4" name="gameSortType">
+                    <div class="button content_button ">
+                        
+                        Keno
+                        
+                    </div>
+                </label>
+                
+            </div>
+
+
+            <select class="content_select mb-24 show_phone" name="gameSortType" onchange="this.form.submit();">
+                
+                <option value="0" selected="selected">
+                    
+                    Kõik piletid
+                    
+                </option>
+                
+                <option value="1">
+                    
+                    Bingo loto
+                    
+                </option>
+                
+                <option value="2">
+                    
+                    Eurojackpot
+                    
+                </option>
+                
+                <option value="3">
+                    
+                    Vikinglotto
+                    
+                </option>
+                
+                <option value="4">
+                    
+                    Keno
+                    
+                </option>
+                
+            </select>
+
+
+            <input type="hidden" name="sortProperty" value="DATETIME">
+            <input type="hidden" name="onlyActive" value="true">
+        </form>
+    </div>
+
+    <div class="blue_link">
+        <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;pageNumber=1&amp;gameSortType=0&amp;sortProperty=DATETIME&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="inline-flex align-center"><svg xmlns="http://www.w3.org/2000/svg" class="mr-10" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <defs>
+                    <path id="a" d="M15.625 0c.207 0 .375.168.375.375v6a.375.375 0 0 1-.375.375h-6a.375.375 0 0 1-.375-.375v-.866c0-.21.173-.38.384-.375l3.95.094A6.122 6.122 0 0 0 8 1.625a6.123 6.123 0 0 0-5.987 4.827.376.376 0 0 1-.367.298H.753a.375.375 0 0 1-.369-.443 7.752 7.752 0 0 1 14.073-2.843l-.073-3.08A.375.375 0 0 1 14.76 0h.866zm-.378 8.75c.234 0 .412.213.369.443a7.752 7.752 0 0 1-14.073 2.843l.073 3.08a.375.375 0 0 1-.375.384H.375A.375.375 0 0 1 0 15.125v-6c0-.207.168-.375.375-.375h6c.207 0 .375.168.375.375v.866c0 .21-.173.38-.384.375l-3.95-.094A6.122 6.122 0 0 0 8 13.875a6.123 6.123 0 0 0 5.987-4.827.376.376 0 0 1 .367-.298h.893z"></path>
+                </defs>
+                <use fill="#1C50B9" fill-rule="nonzero" xlink:href="#a"></use>
+            </svg>
+            Värskenda</a>
+    </div>
+
+</div>
+                    <div class="main_inner_wrapper">
+                        <div class="modal fade show" id="cart_opened">
+    <div class="modal_dialog">
+
+
+        <div id="modalTicket" class="modal_ticket modal_content">
+            <div class="modal_header">
+
+                <div>
+                             
+                    <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;pageNumber=1&amp;gameSortType=0&amp;sortProperty=DATETIME&amp;ticketID=1321608180068&amp;org.apache.struts.action.TOKEN=01763EA276335E035773E682F9C3B2D2#" class="close_icn" onclick="javascript:hideTableRow(&#39;cart_opened&#39;);return false;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.8796 12L19.372 16.4933C20.1925 17.3122 20.211 18.6202 19.416 19.4156C18.621 20.2111 17.313 20.1921 16.4926 19.3731L12.0002 14.8799L7.50781 19.3731C6.68733 20.1921 5.37937 20.2111 4.58439 19.4156C3.78941 18.6202 3.80791 17.3127 4.62689 16.4933L9.12026 12L4.62689 7.50673C3.80791 6.68777 3.78891 5.37984 4.58439 4.58438C5.37987 3.78892 6.68733 3.80792 7.50781 4.62688L12.0002 9.12015L16.4926 4.62688C17.313 3.80792 18.621 3.78892 19.416 4.58438C20.211 5.37984 20.1925 6.68727 19.372 7.50673L14.8796 12Z" fill="black"></path>
+                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16" height="16">
+                                <path d="M14.8796 12L19.372 16.4933C20.1925 17.3122 20.211 18.6202 19.416 19.4156C18.621 20.2111 17.313 20.1921 16.4926 19.3731L12.0002 14.8799L7.50781 19.3731C6.68733 20.1921 5.37937 20.2111 4.58439 19.4156C3.78941 18.6202 3.80791 17.3127 4.62689 16.4933L9.12026 12L4.62689 7.50673C3.80791 6.68777 3.78891 5.37984 4.58439 4.58438C5.37987 3.78892 6.68733 3.80792 7.50781 4.62688L12.0002 9.12015L16.4926 4.62688C17.313 3.80792 18.621 3.78892 19.416 4.58438C20.211 5.37984 20.1925 6.68727 19.372 7.50673L14.8796 12Z" fill="white"></path>
+                            </mask>
+                        </svg>
+                            </a>
+
+
+
+                </div>
+
+
+                <div class="modal_header_row">
+				<span class="modal_heading">
+					Pilet 1321608180068
+
+                    
+
+                    
+
+				</span>
+                    <img class="modal_logo" src="./tänaneeeepileet_files/bingo.svg" width="164" height="30">
+                </div>
+
+                <div class="modal_header_row">
+				<span class="text mb-8">
+				Väljastamise aeg: 13.11.2019 09:08:16
+				</span>
+                </div>
+
+
+                <div class="modal_header_row">
+					<span class="text">
+				Hind:
+				2,00 €
+				</span>
+                </div>
+
+            </div>
+
+
+            <div class="modal_body">
+
+                <div class="alert_section">
+                    
+
+                    
+                </div>
+
+
+                <div class="text mb-16">
+                    Loosimiste arv:
+                    1
+                </div>
+
+                <input id="winValue" hidden="" name="winValue" value="">
+
+                <div id="ticketPicker" class="hide_phone">
+                     
+                </div>
+
+
+                <div id="phoneTicketPicker" class="mb-32 show_phone">
+                    <select class="content_select" name="phoneTicketPicker">
+                        <option disabled="" selected="">
+                            Loosimise number
+                        </option>
+                        
+                    </select>
+                </div>
+
+
+                <div class="radio_tab ticket_game_draw active bought_draw">
+                    <div class="game_draw_number">
+
+                        <strong class="flex align-center">Valitud numbrid
+                            <a class="hide_phone blue_link flex align-center ml-16" onclick="printSection(&#39;modalTicket&#39;)">
+                                <svg class="mr-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#164DBC" fill-rule="nonzero" d="M12.5 8.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zm1-2.75A2.5 2.5 0 0 1 16 8v4a.5.5 0 0 1-.5.5h-2v3a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-3h-2A.5.5 0 0 1 0 12V8a2.5 2.5 0 0 1 2.5-2.5V1c0-.552.426-1 .953-1h6.926a1.5 1.5 0 0 1 1.06.44l1.622 1.62a1.5 1.5 0 0 1 .439 1.061V5.5zM4 1.5v4h8v-2h-1.5A.5.5 0 0 1 10 3V1.5H4zm8 13v-2H4v2h8zm2.5-3.5V8c0-.551-.449-1-1-1h-11c-.551 0-1 .449-1 1v3h13z"></path>
+                                </svg>
+                                Trüki
+                            </a>
+                        </strong>
+
+                    </div>
+
+                    <div class="mb-16">Loosimise number: 1242</div>
+                    <div class="mb-16">Loosimise kuupäev ja kellaaeg: 13.11.2019 18:30:00</div>
+
+                    <div class="ticket_game_draw_wrapper">
+                        
+                            <div class="single_draw bingo_single_draw">
+                                
+                                <div class="single_draw_field">
+                                    <strong>Väli A:</strong>
+                                </div>
+                                <div class="bingo_ticket">
+                                    
+                                    <div class="bingo_ticket_row">
+                                        <div class="ticket_header ticket_column">B
+                                        </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">15</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">11</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">2</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">4</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">7</span>
+                                            </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="bingo_ticket_row">
+                                        <div class="ticket_header ticket_column">I
+                                        </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">23</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">27</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">19</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">24</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">22</span>
+                                            </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="bingo_ticket_row">
+                                        <div class="ticket_header ticket_column">N
+                                        </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">43</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">41</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">35</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">37</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">38</span>
+                                            </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="bingo_ticket_row">
+                                        <div class="ticket_header ticket_column">G
+                                        </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">52</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">54</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">47</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">58</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">46</span>
+                                            </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="bingo_ticket_row">
+                                        <div class="ticket_header ticket_column">O
+                                        </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">66</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">75</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">63</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">70</span>
+                                            </div>
+                                        
+                                            <div class="ticket_column">
+                                                <span class="normal number">62</span>
+                                            </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+
+
+                
+
+                <ul class="modal_list">
+                    <li>Loterii korraldaja on AS Eesti Loto.</li>
+<li>Võidud kuni 2000 eurot kantakse mängukonto registreerimisel esitatud arvelduskontole. Suurema väärtusega võidud vormistatakse AS Eesti Loto kontoris (Hallivanamehe 4, 11317 Tallinn).</li>
+<li>Võidunõude esitamise tähtaeg on 90 päeva arvates loosimispäevast.</li>
+<li>Loteriimängijate pretensioonid lahendab AS Eesti Loto vastavalt loterii korraldamise tingimustele.</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div><div class="modal_backdrop"></div><table class="main_table_layout sm-table-spacing">
+                            <thead>
+                            <tr>
+                                
+                                
+                                <th class="text-left">
+                                    <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;gameSortType=0&amp;sortProperty=TICKET_ID&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Pileti nr.</a>
+                                </th>
+                                <th class="text-left hide_phone">
+                                    Mäng
+                                </th>
+                                <th class="text-left hide_phone">
+                                    <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;gameSortType=0&amp;sortProperty=TICKET_STAKE&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Panus</a>
+                                </th>
+                                <th class="text-left hide_phone">
+                                    <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;gameSortType=0&amp;sortProperty=TICKET_PRICE&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Hind</a>
+                                </th>
+                                
+                                
+                                    <th class="text-right">
+                                        <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;gameSortType=0&amp;sortProperty=DATETIME&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Loosimise aeg</a>
+                                    </th>
+                                
+                            </tr>
+                            </thead>
+                            <tbody>
+                            
+                                
+                                
+                                
+
+                                
+                                
+                                    
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+                                    
+                                
+
+
+                                
+                                
+                                
+
+
+                                
+                                    <tr id="cart-active">
+                                
+                                
+
+                                <td class="text-left sm-baseline">
+                                    <a href="https://www.eestiloto.ee/osi/tickets.do?onlyActive=true&amp;pageNumber=1&amp;gameSortType=0&amp;sortProperty=DATETIME&amp;ticketID=1321608180068&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">1321608180068</a>
+
+                                    <span class="sm-flex align-baseline">
+														<span class="show_phone">Bingo loto</span>
+																						
+                                                                                            
+                                                                                        
+											
+											</span>
+                                </td>
+
+
+                                <td class="text-left hide_phone">
+                                    <img src="./tänaneeeepileet_files/bingo.svg" alt="cart-bingo" class="cart-bingo">
+
+                                </td>
+
+                                <td class="text-left hide_phone">
+                                    2,00 €
+                                </td>
+
+                                <td class="text-left hide_phone">
+                                    2,00 €
+                                </td>
+
+                                
+
+                                
+                                    <td class="text-right sm-baseline">
+                                        13.11.2019 18:30:00
+                                    </td>
+                                
+
+                                </tr>
+
+                                
+                            
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pagination">
+    
+    
+
+    
+    
+    
+    
+    <span class="active">
+    1
+    </span>
+    
+
+    
+    
+</div>
+
+
+
+                    
+                    <div class="clearall">&nbsp;</div>
+
+
+                    <div class="magnolia_tab col-reverse">
+                        
+                            
+                            
+                        
+                    </div>
+
+                    <div class="magnolia_tab col-reverse">
+                        
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="disclaimer-wrapper">
+    <input id="disclaimer-age" type="hidden" value="30">
+    <div class="disclaimer-content">
+        <span class="disclaimer-message">
+            See veebileht kasutab küpsiseid. Veebilehe kasutamist jätkates nõustute küpsiste kasutamisega.
+            <a href="https://www.eestiloto.ee/osi/customer/privacy?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1">Loe lähemalt</a></span>
+        <div class="disclaimer-button">
+            <a href="javascript:void(0);" class="button blue2_round bold bordered" onclick="acceptDisclaimer()">Nõustun</a>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <div class="footer_top">
+        <div class="row footer_menu_top">
+            <div class="column">
+                <div class="title bold">
+                    Mängima
+                </div>
+                
+                <a href="https://www.eestiloto.ee/osi/game.do?action=view&amp;gameDTO.gameID=13&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Bingo loto
+                </a>
+                
+                <a href="https://www.eestiloto.ee/osi/game.do?action=view&amp;gameDTO.gameID=17&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Vikinglotto
+                </a>
+                
+                <a href="https://www.eestiloto.ee/osi/game.do?action=view&amp;gameDTO.gameID=15&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Eurojackpot
+                </a>
+                
+                <a href="https://www.eestiloto.ee/osi/game.do?action=view&amp;gameDTO.gameID=12&amp;org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Keno
+                </a>
+                <a href="https://www.eestiloto.ee/osi/draws.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Tulemused
+                </a>
+                <a href="https://www.eestiloto.ee/osi/stats.do?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Statistika
+                </a>
+            </div>
+            <div class="column">
+                <div class="title bold">
+                    Leia kiiresti
+                </div>
+                <a href="https://www.eestiloto.ee/osi/info/faq?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    KKK
+                </a>
+                <a href="https://www.eestiloto.ee/osi/info/wins?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Võitude vormistamine
+                </a>
+                <a href="https://www.eestiloto.ee/osi/game/bingo/manual.html#stuudio?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Bingo loto TV-märk
+                </a>
+                <a href="https://www.eestiloto.ee/osi/customer/precept?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Üldtingimused
+                </a>
+                <a href="https://www.eestiloto.ee/osi/customer/rules?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Üldreeglid
+                </a>
+                <a href="https://www.eestiloto.ee/osi/customer/privacy?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Isikuandmete kaitse
+                </a>
+
+            </div>
+            <div class="column">
+                <div class="title bold">
+                    Eesti Loto
+                </div>
+                <a href="https://www.eestiloto.ee/osi/loto/main?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Kontaktid
+                </a>
+                <a href="https://www.eestiloto.ee/osi/info/news?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Uudised
+                </a>
+                <a href="https://www.eestiloto.ee/osi/loto/rg?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Vastutustundlik mängimine
+                </a>
+                <a href="https://www.eestiloto.ee/osi/info/pos?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Müügipunktid
+                </a>
+
+                <a href="https://www.eestiloto.ee/osi/info/instant?org.apache.struts.action.TOKEN=F2475C38FB1FAB4CEDC6E29404AEBCD1" class="button link_gray1">
+                    Kiirloto
+                </a>
+            </div>
+            <div class="column footer_menu_bottom">
+                <div class="column bold">
+                    AS EESTI LOTO
+                </div>
+                <div class="column">
+                    Hallivanamehe 4, 11317 Tallinn
+                </div>
+                <div class="column">
+                    Telefon (+372) 650 2030
+                </div>
+                <div class="column">
+                    <a href="mailto:klienditugi@eestiloto.ee">klienditugi@eestiloto.ee</a>
+                </div>
+            </div>
+            <div class="column social">
+                <a href="https://www.facebook.com/EestiLoto" class="button social_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16">
+                        <path d="M7.7 8.45l.36-2.76H5.29V3.92c0-.8.23-1.34 1.39-1.34h1.47V.11C7.9.08 7.02 0 6 0 3.87 0 2.41 1.29 2.41 3.65v2.04H0v2.76h2.41v7.08h2.88V8.45z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/user/EestiLotoTV" class="button social_button youtube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+                        <path d="M8.15 9.78V4.07l5.55 2.87zm11.38-8.71c-.78-.81-1.66-.82-2.06-.86C14.59 0 10.28 0 10.28 0h-.01S5.96 0 3.08.21c-.4.04-1.28.05-2.06.86-.61.61-.81 2.01-.81 2.01S0 4.73 0 6.37v1.54c0 1.65.21 3.29.21 3.29s.2 1.4.81 2.02c.78.81 1.81.79 2.27.87 1.64.16 6.98.2 6.98.2s4.32 0 7.2-.21c.4-.05 1.28-.05 2.06-.86.61-.62.81-2.02.81-2.02s.21-1.64.21-3.29V6.37c0-1.64-.21-3.29-.21-3.29s-.2-1.4-.81-2.01z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="column disclaimer">
+            <p><strong>Tähelepanu! Tegemist on hasartmängu reklaamiga. Hasartmäng pole sobiv viis rahaliste probleemide lahendamiseks. Tutvuge reeglitega ja käituge vastutustundlikult!</strong></p>
+        </div>
+        <div class="column ages">
+            <div class="circle full whiter bold circle1">
+                16+
+            </div>
+            <div class="circle border whiter bold circle2">
+                18+
+            </div>
+            <div class="circle border gray bold circle3">
+                21+
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
