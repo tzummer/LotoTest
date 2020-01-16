@@ -17,6 +17,8 @@ var o0num = ["73","70","71","67","63"]
 var string1 = "Hehe"
 
 struct TestView: View {
+  /// Not working
+    
     let url = NSURL(string: "https://www.tempty.eu/bingo.txt")
 
     let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
